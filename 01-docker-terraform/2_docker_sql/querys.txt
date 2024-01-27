@@ -1,0 +1,20 @@
+Question 1
+
+
+Question 2
+
+Question 3
+
+Question 4
+
+
+Question 5
+SELECT SUM(t."total_amount") as total_sum, zpu."Borough"  FROM green_taxi_data t, zones zpu
+ WHERE t."lpep_pickup_datetime">'2019-09-18 00:00:00' AND t."lpep_pickup_datetime"<'2019-09-18 23:59:59' AND
+ 		t."PULocationID"= zpu."LocationID"
+ GROUP BY zpu."Borough"
+ ORDER BY total_sum DESC;
+
+ Question 6
+
+ 
