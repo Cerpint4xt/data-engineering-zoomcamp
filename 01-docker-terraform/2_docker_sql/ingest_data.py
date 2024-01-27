@@ -13,8 +13,8 @@ from sqlalchemy import create_engine
 def main(params):
     user = params.user
     password = params.password
-    host = params.host 
-    port = params.port 
+    host = params.host
+    port = params.port
     db = params.db
     table_name = params.table_name
     url = params.url
@@ -41,9 +41,7 @@ def main(params):
 
     df.to_sql(name=table_name, con=engine, if_exists='append')
 
-
     while True: 
-
         try:
             t_start = time()
             
