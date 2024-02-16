@@ -130,8 +130,8 @@ As you can see, in the modified function, we yield each row as we get the data, 
 
 ```python
 def search_twitter(query):
-	for row in paginated_get(query):
-		yield row
+    for row in paginated_get(query):
+        yield row
 
 # Get one row at a time
 for row in extract_data("cat pictures"):
