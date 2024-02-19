@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: staging
+    database: ny-rides-rc
+    schema: trips_data_all_rc
+
+    tables:
+      - name: green_tripdata_rc
+      - name: yellow_tripdata_rc
