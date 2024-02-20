@@ -37,4 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   ny_taxi_rides_rc:
+
+vars:
+  payment_type_values: [1, 2, 3, 4, 5]
    
