@@ -7,6 +7,7 @@ sources:
     tables:
       - name: green_tripdata_rc
       - name: yellow_tripdata_rc
+      - name: fhv_tripdata_rc
 
 models:
   - name: stg_green_tripdata_rc
@@ -196,4 +197,36 @@ models:
 
       - name: payment_type_description
         data_type: string
-        description: ""  
+        description: ""
+
+  - name: stg_fhv_tripdata_rc
+    description: ""
+    columns:
+      - name: pickup_locationid
+        data_type: int64
+        description: ""
+
+      - name: dropoff_locationid
+        data_type: int64
+        description: ""
+
+      - name: pickup_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: dropoff_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: dispatching_base_num
+        data_type: string
+        description: ""
+
+      - name: sr_flag
+        data_type: string
+        description: ""
+
+      - name: affiliated_base_number
+        data_type: string
+        description: ""
+     
