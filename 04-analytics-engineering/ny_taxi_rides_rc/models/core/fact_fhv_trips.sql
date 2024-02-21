@@ -5,7 +5,8 @@
 }}
 
 with fhv_tripdata_rc as (
-    select *
+    select *,
+    'fhv' as service_type
     from {{ ref('stg_fhv_tripdata_rc') }}
     where pickup_locationid is not null and dropoff_locationid is not null 
 ),  
