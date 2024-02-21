@@ -1,6 +1,25 @@
 version: 2
 
 models:
+  - name: fact_fhv_trips
+    description: ""
+    columns:
+      - name: pickup_borough
+        data_type: string
+        description: ""
+
+      - name: pickup_zone
+        data_type: string
+        description: ""
+
+      - name: dropoff_borough
+        data_type: string
+        description: ""
+
+      - name: dropoff_zone
+        data_type: string
+        description: ""
+        
   - name: dim_zones
     description: >
       List of unique zones idefied by locationid. 
