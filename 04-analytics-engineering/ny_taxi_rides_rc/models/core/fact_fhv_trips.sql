@@ -15,6 +15,7 @@ dim_zones as (
     where borough != 'Unknown'
 )
 select 
+    fhv_tripdata_rc.service_type as service_type,
     fhv_tripdata_rc.pickup_datetime as pickup_datetime,
     fhv_tripdata_rc.dropOff_datetime as dropoff_datetime,
     pickup_zone.borough as pickup_borough, 
