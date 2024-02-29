@@ -92,3 +92,13 @@ distData.filter(_ < 10).collect()
 ### PySpark
 
 It's the same for all platforms. Go to [pyspark.md](pyspark.md). 
+
+
+export JAVA_HOME="${HOME}/spark/jdk-11.0.1"
+export PATH="${JAVA_HOME}/bin:${PATH}"
+
+
+export SPARK_HOME="${HOME}/spark/spark-3.3.2-bin-hadoop3"
+export PATH="${SPARK_HOME}/bin:${PATH}"
+
+
